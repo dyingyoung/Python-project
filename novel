@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+html = urlopen("http://www.qu.la/book/2970/1652534.html")
+beu=BeautifulSoup(html.read(),"lxml")
+print(beu,h1)
